@@ -1,8 +1,8 @@
-// Header.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './Headerhor.css';
 
-const Header = () => {
+const Headerhor = () => {
   return (
     <header className="header-container">
       <input type="text" className="search-bar" placeholder="Search" />
@@ -14,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headerhor;
