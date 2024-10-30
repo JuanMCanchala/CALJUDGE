@@ -1,0 +1,55 @@
+/* Footer.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1; /* This allows the main content to take available space */
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Ensures the footer stretches across the full width */
+  position: relative; /* Ensures the footer is positioned relative to the normal flow */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #61dafb; /* Change this to your desired hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
