@@ -1,5 +1,3 @@
-// Footer.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'; // Import the CSS file for styles
 
