@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Headerhor from './components/Headerhor';
+import Headerver from './components/Headerver';
 import Home from './views/Home';
 import Footer from './components/Footer.jsx';
 import User from "./views/User.jsx";
@@ -13,6 +14,8 @@ function App() {
   return (
     <div>
       <Headerhor />
+      <Headerver />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/User" element={<User />} />
