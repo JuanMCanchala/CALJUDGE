@@ -10,7 +10,7 @@ const Headerver = () => {
     };
 
     return (
-        <div className={headerver ${collapsed ? 'collapsed' : ''}}>
+        <div className={`headerver ${collapsed ? 'collapsed' : ''}`}>
             <div className="headerver__top">
                 <button className="menu-button" onClick={toggleMenu}>
                     <FaBars />
