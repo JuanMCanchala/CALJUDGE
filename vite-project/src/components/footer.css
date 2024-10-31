@@ -1,55 +1,79 @@
-/* Footer.css */
-html,
-body {
-  height: 100%;
-  margin: 0;
+.footer {
+  bottom: 1;
+  position:absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  z-index: 1000; 
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
 }
-
-body {
+.main-content {
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.main {
-  flex: 1; /* This allows the main content to take available space */
-}
 
-.footer {
-  background-color: #282c34;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%; /* Ensures the footer stretches across the full width */
-  position: relative; /* Ensures the footer is positioned relative to the normal flow */
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.footer-logo h1 {
+  color: #1a73e8;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-links {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.footer-links a {
-  color: white;
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #555;
   text-decoration: none;
-  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.footer-links a:hover {
-  color: #61dafb; /* Change this to your desired hover color */
+.footer-column a:hover {
+  text-decoration: underline;
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-  }
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social i {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.footer-social i:hover {
+  color: #333;
 }

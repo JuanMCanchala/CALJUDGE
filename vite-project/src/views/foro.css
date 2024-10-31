@@ -1,0 +1,76 @@
+/* Foro.css */
+.foro-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .foro-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .foro-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .your-discussions-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .forums-list {
+    margin-top: 20px;
+  }
+  
+  .forum-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .forum-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  .forum-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+  .forum-details {
+    flex-grow: 1;
+  }
+  
+  .forum-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .forum-description {
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .forum-post-info {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
