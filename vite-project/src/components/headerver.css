@@ -1,0 +1,111 @@
+.headerver {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: width 0.3s ease; /* Animación para suavizar el colapso */
+}
+
+.headerver.collapsed {
+    width: 60px; /* Ancho reducido cuando el menú está colapsado */
+}
+
+.headerver__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333333;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.headerver__create {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.create-button {
+    background-color: #00baff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease;
+}
+
+.headerver.collapsed .create-button {
+    padding: 10px;
+    justify-content: center;
+}
+
+.headerver__menu {
+    flex-grow: 1;
+}
+
+.headerver__menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.headerver__menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.headerver__menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-icon {
+    font-size: 18px;
+    color: #333333;
+    margin-right: 10px;
+}
+
+.headerver.collapsed .menu-icon {
+    margin-right: 0;
+}
+
+.headerver__menu span {
+    font-size: 16px;
+    color: #333333;
+}
+
+.headerver.collapsed .headerver__menu span,
+.headerver.collapsed .headerver__events span,
+.headerver.collapsed .create-button span {
+    display: none; /* Oculta el texto en modo colapsado */
+}
+
+.headerver__events {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #0073e6;
+    cursor: pointer;
+    text-align: center;
+}
