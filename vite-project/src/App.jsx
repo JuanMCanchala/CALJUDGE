@@ -21,6 +21,7 @@ function App() {
           <Route path="/User" element={<User />} />
           <Route path="/Foro" element={<Foro />} />
         </Routes>
+        <footer/>
     </div>
 
   );
