@@ -1,0 +1,103 @@
+.submit-modal {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-modal h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.submit-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-field label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.toggle-button {
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #d0d0d0;
+}
+
+.dropdown {
+    flex: 2;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.solution-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.file-input {
+    margin-top: 10px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #f5f5f5;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .submit-modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .submit-field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

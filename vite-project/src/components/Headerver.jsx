@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars, FaPlus, FaHome, FaTrophy, FaDatabase, FaProjectDiagram, FaCode, FaComments, FaGraduationCap, FaEllipsisH } from 'react-icons/fa';
 import './Headerver.css';
 
-const Headerver = () => {
-    const [collapsed, setCollapsed] = useState(false);
-
-    const toggleMenu = () => {
-        setCollapsed(!collapsed);
-    };
-
+const Headerver = ({ collapsed, toggleMenu }) => {
     return (
         <div className={`headerver ${collapsed ? 'collapsed' : ''}`}>
             <div className="headerver__top">
@@ -26,41 +20,57 @@ const Headerver = () => {
             <nav className="headerver__menu">
                 <ul>
                     <li>
-                        <FaHome className="menu-icon" />
-                        {!collapsed && <span>Home</span>}
+                        <Link to="/" className="menu-link">
+                            <FaHome className="menu-icon" />
+                            {!collapsed && <span>Inicio</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaTrophy className="menu-icon" />
-                        {!collapsed && <span>Competitions</span>}
+                        <Link to="/competitions" className="menu-link">
+                            <FaTrophy className="menu-icon" />
+                            {!collapsed && <span>Competiciones</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaDatabase className="menu-icon" />
-                        {!collapsed && <span>Datasets</span>}
+                        <Link to="/RankingPage" className="menu-link">
+                            <FaDatabase className="menu-icon" />
+                            {!collapsed && <span>Ranking</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaProjectDiagram className="menu-icon" />
-                        {!collapsed && <span>Models</span>}
+                        <Link to="/Submit" className="menu-link">
+                            <FaProjectDiagram className="menu-icon" />
+                            {!collapsed && <span>Submit</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaCode className="menu-icon" />
-                        {!collapsed && <span>Code</span>}
+                        <Link to="/problems" className="menu-link">
+                            <FaCode className="menu-icon" />
+                            {!collapsed && <span>Problemas</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaComments className="menu-icon" />
-                        {!collapsed && <span>Discussions</span>}
+                        <Link to="/Foro" className="menu-link">
+                            <FaComments className="menu-icon" />
+                            {!collapsed && <span>Foro</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaGraduationCap className="menu-icon" />
-                        {!collapsed && <span>Learn</span>}
+                        <Link to="/learn" className="menu-link">
+                            <FaGraduationCap className="menu-icon" />
+                            {!collapsed && <span>Aprender</span>}
+                        </Link>
                     </li>
                     <li>
-                        <FaEllipsisH className="menu-icon" />
-                        {!collapsed && <span>More</span>}
+                        <Link to="/more" className="menu-link">
+                            <FaEllipsisH className="menu-icon" />
+                            {!collapsed && <span>Más</span>}
+                        </Link>
                     </li>
                 </ul>
             </nav>
             <div className="headerver__events">
-                {!collapsed && <span>View Active Events</span>}
+                {!collapsed && <span>Ver eventos ahora</span>}
             </div>
         </div>
     );

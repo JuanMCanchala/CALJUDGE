@@ -1,12 +1,10 @@
 
 const RankingTable = ({ activeTab }) => {
-    // Datos ficticios de ejemplo
     const usersData = [
         { rank: 1, name: 'hyd', tier: 'Grandmaster', medals: { gold: 11, silver: 12, bronze: 0 }, points: 157888 },
         { rank: 2, name: 'Dieter', tier: 'Grandmaster', medals: { gold: 43, silver: 17, bronze: 3 }, points: 148152 },
         { rank: 3, name: 'Psi', tier: 'Grandmaster', medals: { gold: 37, silver: 9, bronze: 0 }, points: 127784 },
         { rank: 4, name: 'Pascal Pfeiffer', tier: 'Grandmaster', medals: { gold: 25, silver: 11, bronze: 3 }, points: 109810 },
-        // Puedes agregar más datos para mostrar en la tabla
     ];
 
     return (

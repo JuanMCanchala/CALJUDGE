@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -6,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <h1>CalJudge</h1>
+        <h1 className="logo-caljudge">CalJudge</h1>
       </div>
       <div className="footer-links">
         <div className="footer-column">
