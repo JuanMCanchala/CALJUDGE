@@ -6,9 +6,10 @@
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 200px; /* Espacio para la barra lateral */
+  left: 100px; /* Espacio para la barra lateral */
   right: 100px;
   flex-direction: row-reverse;
+  position: absolute;
 }
 
 @media (max-width: 768px) {

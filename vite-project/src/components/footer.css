@@ -1,6 +1,6 @@
 .footer {
-  bottom: 1;
-  position:absolute;
+  bottom:1;
+  position:relative;
   left: 0;
   width: 100%;
   background-color: #f8f9fa;
@@ -10,9 +10,11 @@
   align-items: center;
   justify-content: center;
   color: #333;
-  z-index: 1000; 
+  z-index: 0; 
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+  margin-top: auto;
 }
+
 .main-content {
   min-height: 100vh; 
   display: flex;

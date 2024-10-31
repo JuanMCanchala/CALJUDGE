@@ -1,29 +1,26 @@
 import { Routes, Route } from "react-router-dom";
-import './App.css'
+import './App.css';
 import Headerhor from './components/Headerhor';
 import Headerver from './components/Headerver';
 import Home from './views/Home';
-import Footer from './components/Footer.jsx';
-import User from "./views/User.jsx";
-import Foro from "./views/Foro.jsx";
-// aqui van las paginas
-//abajo se pone asi para cada pagina entre routes
-// <Route path="/" element={<Inicio />} />
+import Footer from './components/Footer';
+import User from "./views/User";
+import Foro from "./views/Foro";
 
 function App() {
   return (
-    <div>
-      <Headerhor />
+    <div className="app-container">
       <Headerver />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/User" element={<User />} />
-          <Route path="/Foro" element={<Foro />} />
-        </Routes>
-        <footer/>
+        <main className="main-content">
+        <Headerhor />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/User" element={<User />} />
+            <Route path="/Foro" element={<Foro />} />
+          </Routes>
+          <Footer />
+        </main>
     </div>
-
   );
 }
 
