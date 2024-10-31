@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home-container">
       <section className="intro-section">
         <div className="text-content">
-          <h1>Welcome to Our Platform</h1>
+          <h1>Welcome to Our Platforma</h1>
           <p>
             Join a community of enthusiasts and professionals. Stay updated on the latest techniques and technologies. Discover a huge repository of models, data, and code for your next project.
           </p>
